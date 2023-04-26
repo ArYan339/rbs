@@ -1,0 +1,191 @@
+/* Position content on the right */
+.content1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Rainbow animation for span element */
+.heading span {
+  animation: rainbow 2s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: orange;
+  }
+
+  50% {
+    color: yellow;
+  }
+
+  75% {
+    color: green;
+  }
+
+  100% {
+    color: blue;
+  }
+}
+
+/* Pulsing animation for button element */
+.button-area button {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Style form fields and labels */
+.form-group {
+  margin-top: 2rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.field input {
+  padding: 0.8rem 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #555;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.field input:focus {
+  outline: none;
+  border-bottom-color: #1a73e8;
+}
+
+.field input:focus~i,
+.field input:not(:placeholder-shown)~i {
+  color: #1a73e8;
+  transform: translateY(-5px);
+}
+
+.field i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ccc;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.message textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+/* Style submit button */
+.button-area button {
+  padding: 1.2rem 3rem;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-area button:hover {
+  background-color: #0d47a1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .button-area button {
+    padding: 5rem 6rem;
+    font-size: 5rem;
+  }
+}
+
+.field input {
+  font-size: 1rem;
+}
+
+.button-area button {
+  padding: 1rem 1rem;
+  font-size: 0.5rem;
+}
+
+/* Add animation styles to the icon boxes */
+.icon-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Add hover effect to the icon boxes */
+.icon-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Add animation styles to the section title */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Add animated text to the section title */
+.section-title h1 {
+  color: #ff7f50;
+  font-size: 50px;
+  animation: rainbow 1s ease-in-out infinite alternate;
+}
+
+/* Add keyframes for the rainbow animation */
+@keyframes rainbow {
+  0% {
+    color: #bec53a;
+    text-shadow: 0 0 10px #bec99d;
+  }
+
+  50% {
+    color: #ffc0cb;
+    text-shadow: 0 0 10px #ffc0cb;
+  }
+
+  100% {
+    color: #ea16e6;
+    text-shadow: 0 0 10px #d9cddc;
+  }
+}
+
+/* Increase the size of the icons */
+.item img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Increase the font size of the captions */
+.item figcaption {
+  font-size: 18px;
+}
